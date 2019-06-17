@@ -1,0 +1,179 @@
+/*DUDAS:
+1) Como hago un menú hamburguesa?
+2) Como hago un menú hamburguesa adentro de un menú normal?
+3) No andan las background images
+4) Dudas sobre como organizar con Bootstrap - no me queda centrado*/
+
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Days One', sans-serif;*/
+
+
+/*---------------------------------------GENERALES-----------------------------------*/
+
+
+*{
+	font-family: 'Oswald', sans-serif;
+}
+
+
+header {
+	background-color: black;
+	padding-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+header img {text-align: center;}
+
+nav {text-align: center;}
+
+nav ul {list-style-type: none; display: flex; }
+
+nav ul li {display: inline; padding: 10px;}
+
+nav ul li a {color: white; font-size: 18px;}
+
+
+/*desplegable*/
+
+nav ul li ul {
+	position: absolute;
+	left: 54%;
+	top: 8%;
+	text-decoration: none;
+	display: none;
+	}
+
+nav ul li ul a 
+{
+	text-align: center;
+}
+nav ul li:hover ul {
+	background-color: #344324;
+	color:#000000;
+	display: block;
+	position: absolute;
+	}
+
+nav ul li:hover ul {
+	display: block;
+	border: none;	
+}
+nav ul li ul li{
+	display: block;	
+}
+
+
+footer {
+	background-color: black;
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+
+
+
+
+/*---------------------------------------INDEX-----------------------------------*/
+
+
+.fondo-index {
+	background-image: url(../img/poster.jpg);
+	background-size: cover;
+}
+
+.cosas{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;	
+}
+
+.cosas > .cositas {  
+	
+		width: 45%;
+		padding:20px 24px;
+		min-height:200px;}
+		
+
+h3 {
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.triple img {
+	margin-left: 6%
+}
+
+.cositas h3 a {
+	color: black;
+	text-decoration: none;
+	background-color: white;
+	padding: 15px;
+	margin-top: 13px;
+	display: inline-block;
+	border-radius: 5px;
+	transition-duration: 1s, 2s; 
+	transition-property: background,padding;
+
+}
+
+.cositas h3 a:hover {
+	background: black;
+	padding-right:83.3%;
+	color: white; 
+}
+
+/*---------------------------------------REPARTO-----------------------------------*/
+
+ .fondo-reparto {
+	background: url('selva.jpg');
+	background-size: cover;
+	padding: 10px;
+	background-repeat: no-repeat;
+}
+
+.fondo-reparto {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.pad {padding-top: 10px;}
+
+section .fotelis img { 
+	float: left; box-sizing: border-box; 
+	border-radius: 10px 10px 0; width: auto; margin: auto;}
+
+.fotelis h2 {position: absolute;color: #fff; 
+	background-color: #000;text-align: center; margin-top: 228px; font-size: 16px;}
+/*---------------------------------------SINOPSIS-----------------------------------*/
+
+.fondo-sinopsis {
+	background-image: url("../img/fondo-acerca.jpg"); 
+	background-size: cover;
+}
+
+.Sinopsis h1 {font-size: 70px;
+text-align: center;}
+
+.sinopsis p {font-size: 40px;}
+
+/*---------------------------------------GRACIAS-----------------------------------*/
+
+.gracias h1 {
+	font-size: 30px;
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
