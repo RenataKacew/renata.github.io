@@ -7,6 +7,8 @@
 /*font-family: 'Oswald', sans-serif;
 font-family: 'Days One', sans-serif;*/
 
+*{font-family: 'Oswald', sans-serif;}
+
 /*--------------------------------------KEYFRAMES-----------------------------------*/
 
 @keyframes claqueta{
@@ -19,10 +21,13 @@ font-family: 'Days One', sans-serif;*/
 	100%{transform: translateX(2000px);}
 }
 
+@keyframes ben {
+	0% { transform: rotate(0);}
+	100% { transform: rotate(2turn);}
+
+}
+
 /*---------------------------------------GENERALES-----------------------------------*/
-
-
-*{font-family: 'Oswald', sans-serif;}
 
 
 header {background-color: black; padding-top: 15px; display: flex; justify-content: center;}
@@ -105,7 +110,6 @@ h3 {
 
 }
 
-
 .pad {padding-top: 10px;}
 
 section .fotelis img { 
@@ -119,6 +123,8 @@ section .fotelis img {
 
 .fotelis h2 {position: absolute;color: #fff; 
 	background-color: #000;text-align: center; margin-top: 228px; font-size: 16px;}
+
+section .row
 /*---------------------------------------SINOPSIS-----------------------------------*/
 
 .fondo-sinopsis {
@@ -181,6 +187,32 @@ input[type=submit]:hover {
 	text-align: center;
 }
 
+.animaciones {overflow: hidden;}
+
+.claqueta {
+	background-image: url(../img/claqueta.png);
+	position: absolute;
+	top: 70%;
+	height: 336px;
+	width: 317px;
+	overflow: hidden; 
+	animation-name: claqueta, moving;
+	animation-duration: 2s , 5s;
+	animation-iteration-count: infinite, infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: steps(4), linear;
+	animation-delay: 0s;
+}
+
+.ben {
+	position: absolute;
+	top: 70px;
+	width: 200px;
+	right: 10%;
+	animation-name: ben;
+	animation-duration: 10000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 
 /*---------------------------------------VIDEOS-----------------------------------*/
 
@@ -232,28 +264,11 @@ input[type=submit]:hover {
 }
 
 
-.claqueta {
-	background-image: url(../img/claqueta.png);
-	position: absolute;
-	top: 25%;
-	height: 150px;
-	width: 70px;
-	overflow: hidden; 
-	animation-name: claqueta, moving;
-	animation-duration: 0.3s , 5s;
-	animation-iteration-count: infinite, infinite;
-	animation-fill-mode: forwards;
-	animation-timing-function: steps(4), linear;
-	animation-delay: 0s;
-}
-
 /*--------------------------------Media Query--------------------------------------------------------*/
 
 /*XL devices*/
-@media screen and (min-width: 1201px)  { nav { display: flex; justify-content: center; flex-wrap: wrap;
-}
+@media screen and (min-width: 1201px) {} 
 	
-}
 
 /*Big devices*/
 @media screen and (min-width: 991px) and (max-width: 1200px) {
