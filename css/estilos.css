@@ -192,12 +192,12 @@ input[type=submit]:hover {
 .camara {
 	background-image: url(../img/camara.png);
 	position: absolute;
-	top: 50%;
+	top: 78%;
 	height: 169px;
 	width: 200px;
 	overflow: hidden; 
 	animation-name: camara, moving;
-	animation-duration: 2s , 5s;
+	animation-duration: 2s , 8s;
 	animation-iteration-count: infinite, infinite;
 	animation-fill-mode: forwards;
 	animation-timing-function: steps(4), linear;
