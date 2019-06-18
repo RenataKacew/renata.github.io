@@ -37,6 +37,7 @@ nav ul li {display: inline; padding: 10px;}
 
 nav ul li a {color: white; font-size: 18px;}
 
+nav ul li a:hover {text-decoration: none; color: green;}
 
 /*desplegable*/
 
@@ -50,6 +51,7 @@ nav ul li:hover ul {display: block; border: none;}
 
 nav ul li ul li {display: block;}
 
+nav ul li ul li a:hover {text-decoration: none; color: black;}
 
 footer {background-color: black; padding-top: 20px; display: flex; justify-content: center; flex-direction: row;}
 
@@ -163,6 +165,28 @@ label {
 	font-size: 30px; 
 	color: white;
 }
+
+input[type=submit] {
+    color: black;
+	text-align: center;
+	text-decoration: none;
+	background-color: white;
+	padding: 15px;
+	margin-top: 13px;
+	display: inline-block;
+	border-radius: 5px;
+	transition-duration: 1s, 2s; 
+	transition-property: background,padding;
+}
+
+input[type=submit]:hover {
+	background: black;
+	padding-right:40%;
+	padding-left: 40%;
+	color: white; 
+	text-align: center;
+}
+
 
 /*---------------------------------------VIDEOS-----------------------------------*/
 
