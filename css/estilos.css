@@ -19,8 +19,7 @@ font-family: 'Days One', sans-serif;*/
 @keyframes moving{
 	0%{transform: translateX(0);}
 	100%{transform: translateX(2000px);}
-}
-
+}*/
 @keyframes ben {
 	0% { transform: rotate(0);}
 	100% { transform: rotate(2turn);}
@@ -159,6 +158,7 @@ form {
 	justify-content: center;
 	background-color: rgba(0,0,0,0.4);
 	margin-top: 6%;
+	margin-bottom: 6%;
 }
 
 label {
@@ -189,14 +189,14 @@ input[type=submit]:hover {
 
 .animaciones {overflow: hidden;}
 
-.claqueta {
-	background-image: url(../img/claqueta.png);
+.camara {
+	background-image: url(../img/camara.png);
 	position: absolute;
-	top: 70%;
-	height: 336px;
-	width: 317px;
+	top: 50%;
+	height: 169px;
+	width: 200px;
 	overflow: hidden; 
-	animation-name: claqueta, moving;
+	animation-name: camara, moving;
 	animation-duration: 2s , 5s;
 	animation-iteration-count: infinite, infinite;
 	animation-fill-mode: forwards;
@@ -206,13 +206,13 @@ input[type=submit]:hover {
 
 .ben {
 	position: absolute;
-	top: 70px;
-	width: 200px;
-	right: 10%;
+	top: 200px;
+	width: 5px;
+	right: 30%;
 	animation-name: ben;
 	animation-duration: 10000ms;
 	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+	animation-timing-function: linear;}
 
 /*---------------------------------------VIDEOS-----------------------------------*/
 
