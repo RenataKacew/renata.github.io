@@ -1,0 +1,259 @@
+/*DUDAS:
+1) Como hago un menú hamburguesa?
+2) Como hago un menú hamburguesa adentro de un menú normal?
+3) No andan las background images
+4) Dudas sobre como organizar con Bootstrap - no me queda centrado*/
+
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Days One', sans-serif;*/
+
+/*--------------------------------------KEYFRAMES-----------------------------------*/
+
+@keyframes claqueta{
+	0%{background-position: 0;}
+	100%{background-position: -768px;}
+}
+
+@keyframes moving{
+	0%{transform: translateX(0);}
+	100%{transform: translateX(2000px);}
+}
+
+/*---------------------------------------GENERALES-----------------------------------*/
+
+
+*{font-family: 'Oswald', sans-serif;}
+
+
+header {background-color: black; padding-top: 15px; display: flex; justify-content: center;}
+
+header img {text-align: center;}
+
+nav {text-align: center;}
+
+nav ul {list-style-type: none; display: flex; }
+
+nav ul li {display: inline; padding: 10px;}
+
+nav ul li a {color: white; font-size: 18px;}
+
+
+/*desplegable*/
+
+nav ul li ul {position: absolute; left: 54%; top: 8%; text-decoration: none; display: none; z-index: 1;}
+
+nav ul li ul a {text-align: center;}
+
+nav ul li:hover ul {background-color: #344324; color:#000000; display: block; position: absolute;}
+
+nav ul li:hover ul {display: block; border: none;}
+
+nav ul li ul li {display: block;}
+
+
+footer {background-color: black; padding-top: 20px; display: flex; justify-content: center; flex-direction: row;}
+
+
+
+
+/*---------------------------------------INDEX-----------------------------------*/
+
+
+.fondo-index {background-image: url(../img/poster.jpg);background-size: cover;}
+
+.cosas{display: flex;justify-content: center;align-items: center;padding: 10px; flex-wrap: wrap;}
+
+.cosas > .cositas { width: 45%; padding:20px 24px; min-height:200px;}
+		
+
+h3 {
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px 0 ;
+}
+
+.triple img {
+	margin-left: 6%;
+	margin-top: 3%;
+}
+
+.cositas h3 a {
+	color: black;
+	text-decoration: none;
+	background-color: white;
+	padding: 15px;
+	margin-top: 13px;
+	display: inline-block;
+	border-radius: 5px;
+	transition-duration: 1s, 2s; 
+	transition-property: background,padding;
+}
+
+.cositas h3 a:hover {
+	background: black;
+	padding-right:83.3%;
+	color: white; 
+}
+
+/*---------------------------------------REPARTO-----------------------------------*/
+
+ .fondo-reparto {
+	background-image: : url('../img/selva.jpg');
+	overflow: hidden;
+	position: relative;
+	width: 100vw; 
+	height:100vh;
+
+}
+
+.fondo-reparto {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.pad {padding-top: 10px;}
+
+section .fotelis img { 
+	float: left; box-sizing: border-box; 
+	border-radius: 10px 10px 0; width: auto; margin: auto;}
+
+ .gente h3 {
+	background-color: none;
+
+}
+
+.fotelis h2 {position: absolute;color: #fff; 
+	background-color: #000;text-align: center; margin-top: 228px; font-size: 16px;}
+/*---------------------------------------SINOPSIS-----------------------------------*/
+
+.fondo-sinopsis {
+	background: url('../img/fondo-acerca.jpg');
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+
+}
+ .Sinopsis { background-color: rgba(0,0,0,0.4); margin: 3%;}
+
+.Sinopsis h1 {font-size: 70px;
+text-align: center; color: green; }
+
+.Sinopsis p {font-size: 40px; color: white;}
+
+.rated {display: flex; justify-content: center; padding-bottom: 10px;}
+
+.rated img {width: 275px; height: 250px; }
+/*---------------------------------------CONTACTO-----------------------------------*/
+
+.fondo-contacto {
+    background-image: url(../img/selva.jpg);
+	background-size: cover;	
+	width: 100vw; 
+	height:100vh;
+}
+
+
+form {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.4);
+	margin-top: 6%;
+}
+
+label {
+	font-size: 30px; 
+	color: white;
+}
+
+/*---------------------------------------VIDEOS-----------------------------------*/
+
+.fondo-videos {
+    background-image: url(../img/selva.jpg);
+	background-size: cover;	
+}
+
+.videos {text-align: center; padding-top: 20px;}
+
+/*---------------------------------------GRACIAS-----------------------------------*/
+
+.fondo-gracias {
+    background-image: url(../img/selva.jpg);
+	background-size: cover;	
+	width: 100vw; 
+	height:100vh;
+}
+
+.Gracias {text-align: center; padding-top: 100px; }
+
+.Gracias h1 {
+	font-size: 30px;
+	padding: 20px;
+}
+
+.Gracias a {background-color: }
+
+
+.Gracias a {
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	background-color: white;
+	padding: 15px;
+	margin-top: 13px;
+	display: inline-block;
+	border-radius: 5px;
+	transition-duration: 1s, 2s; 
+	transition-property: background,padding;
+}
+
+.Gracias a:hover {
+	background: black;
+	padding-right:83.3%;
+	color: white; 
+	text-align: center;
+
+}
+
+
+.claqueta {
+	background-image: url(../img/claqueta.png);
+	position: absolute;
+	top: 25%;
+	height: 150px;
+	width: 70px;
+	overflow: hidden; 
+	animation-name: claqueta, moving;
+	animation-duration: 0.3s , 5s;
+	animation-iteration-count: infinite, infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: steps(4), linear;
+	animation-delay: 0s;
+}
+
+/*--------------------------------Media Query--------------------------------------------------------*/
+
+/*XL devices*/
+@media screen and (min-width: 1201px)  { nav { display: flex; justify-content: center; flex-wrap: wrap;
+}
+	
+}
+
+/*Big devices*/
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+	
+}
+
+/*Medium devices*/
+@media screen and (min-width: 600px) and (max-width: 990px) {
+	
+}
+
+/*Small devices*/
+@media screen and (min-width: 0px) and (max-width: 599px) {
+	.cosas {display: flex;justify-content: center;padding: 10px; flex-wrap: wrap;}
+}
+
+
+
+
+
+
