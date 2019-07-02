@@ -64,7 +64,7 @@ nav ul li ul li {display: block;}
 
 nav ul li ul li a:hover {text-decoration: none; color: black;}
 
-footer {background-color: black; padding-top: 20px; display: flex; justify-content: center; flex-direction: row;}
+footer {background-color: black; padding-top: 20px; display: flex; justify-content: center; flex-direction: row; bottom: 0%;}
 
 .white {color: white; padding: 5px;}
 
@@ -80,9 +80,9 @@ footer {background-color: black; padding-top: 20px; display: flex; justify-conte
 
 .fondo-index {background-image: url(../img/poster.jpg);background-size: cover;}
 
-.cosas{display: flex;justify-content: center;align-items: center;padding: 10px;}
+.cosas{display: flex;justify-content: center;align-items: center;padding: 10px; box-sizing: border-box;}
 
-.cosas > .cositas { width: 50%; padding:20px 24px; box-sizing: content-box;}
+.cosas > .cositas { width: 50%; padding:20px 24px; box-sizing: border-box;}
 		
 
 h3 {color: white;background-color: rgba(0,0,0,0.5);padding: 10px 0 ;=}
@@ -151,8 +151,6 @@ animation-iteration-count: infinite;
 
 
 form {
-	display: flex;
-	justify-content: center;
 	background-color: rgba(0,0,0,0.4);
 
 }
@@ -160,6 +158,7 @@ form {
 label {
 	font-size: 30px; 
 	color: white;
+	margin-left: 40%;
 }
 
 input[type=submit] {
@@ -173,6 +172,7 @@ input[type=submit] {
 	border-radius: 5px;
 	transition-duration: 1s, 2s; 
 	transition-property: background,padding;
+	box-sizing: border-box;
 }
 
 input[type=submit]:hover {
@@ -181,6 +181,7 @@ input[type=submit]:hover {
 	padding-left: 40%;
 	color: white; 
 	text-align: center;
+	box-sizing: border-box;
 }
 
 .animaciones {overflow: hidden;}
@@ -200,6 +201,8 @@ input[type=submit]:hover {
 	animation-delay: 0s;
 }
 
+.yas {background-color: black; padding-top: 20px; display: flex; justify-content: center; flex-direction: row; 
+	bottom: 0%; margin-bottom: 0%;}
 
 /*---------------------------------------VIDEOS-----------------------------------*/
 
@@ -269,6 +272,37 @@ input[type=submit]:hover {
 .ben img {
 	height: 141.5px;
 	width: 100px;
+}
+
+/*---------------------------------------MEDIA QUERY-----------------------------------*/
+
+/*XL devices*/
+@media screen and (min-width: 1201px)  {
+	
+}
+
+/*Big devices*/
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+	.cositas h3 a {color: black;text-decoration: none;background-color: white;padding: 15px;
+	          margin-top: 13px;display: inline-block; border-radius: 5px;transition-duration: 1s, 2s; 
+	          transition-property: background,padding;}
+
+.cositas h3 a:hover {background: black;padding-right:76%;color: white;}
+
+}
+
+/*Medium devices*/
+@media screen and (min-width: 600px) and (max-width: 990px) {
+	.cositas h3 {display: none;}
+.cositas iframe {text-align: center;}
+}
+
+/*Small devices*/
+@media screen and (min-width: 0px) and (max-width: 599px) {
+	.cositas h3 {display: none;}
+	.cositas iframe {text-align: center;}
+}
+	
 }
 
 
